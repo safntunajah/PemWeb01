@@ -1,3 +1,54 @@
 body{
-    background-color: wheat;
+    background-color: bisque;
+}
+
+#header{
+    background-color: burlywood;
+    padding: 5px;
+}
+
+h1{
+    text-align: center;
+    color: blue;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#header blockquote{
+    width: 50%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px dotted black;
+    background-color: gold;
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.konten {
+    text-align: center;
+}
+
+.konten ul li {
+    list-style-type: none;
+    display: inline-block;
+}
+
+.gambar {
+    width: 70%;
+    margin-left: auto;
+    margin-left: auto;
+}
+
+.isi {
+    text-align: justify;
+}
+
+.jawa {
+    font-size: 40px;
+    color: blue;
+}
+
+.koleksi {
+    text-align: center;
+    font-size: 40%;
 }
