@@ -1,0 +1,44 @@
+.fina1 {
+    width: 100%;
+    height: 100px;
+    background-color:darkolivegreen;
+    border: 1px solid;
+}
+
+.fina2 {
+    width: 20%;
+    height: 250px;
+    background-color: yellow;
+    margin-top: 25px;
+    border: 1px solid;
+}
+
+.fina3 {
+    width: 78%;
+    height: 250px;
+    background-color:orange;
+    margin-top: 25px;
+    margin-top: -250px;
+    margin-left:20px ;
+    float: right;
+    border: 1px solid;
+}
+
+.fina4 {
+    width: 20%;
+    height: 250px;
+    background-color: yellow;
+    margin-top: 25px;
+    border: 1px solid;
+}
+
+.fina5 {
+    width: 78%;
+    height: 250px;
+    background-color:aqua;
+    margin-top: 25px;
+    margin-top: -250px;
+    margin-left:20px ;
+    float: right;
+    border: 1px solid;
+}
