@@ -1,0 +1,52 @@
+*{
+    box-sizing: border-box;
+}
+
+body{
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0px;
+}
+
+.asal1 {
+    width: 15%;
+    height: 600px;
+    background-color: aqua;
+}
+
+.con1 {
+    width: 85%;
+    height: 100px;
+    background-color: aquamarine;
+    float: right;
+    margin-top: -600px;
+}
+
+.con2 {
+    width: 15%;
+    height: 400px;
+    background-color: darkkhaki;
+    float: right;
+    margin-top: -500px;
+}
+
+.con3 {
+    width: 70%;
+    height: 400px;
+    background-color: violet;
+    float: left;
+    margin-top: -500px;
+    margin-left: 15%;
+}
+
+.con4 {
+    width: 85%;
+    height: 100px;
+    background-color: aquamarine;
+    float: right;
+    margin-top: -100px;
+}
+
+p {
+    padding: 10px 20px;
+}
