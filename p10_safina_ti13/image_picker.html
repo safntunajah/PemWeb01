@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Picker</title>
+    <script>
+        function gambar() {
+            let drop_img = document.getElementById("dropdown_img").value;
+            let image = document.getElementById("image");
+
+            if (drop_img == "gorila") {
+                image.setAttribute("src", "https://ichef.bbci.co.uk/news/640/cpsprodpb/793E/production/_117883013_gorilla_dianfosseygorillafund1.jpg")
+                alert("ini gambar gorila");
+
+            }else if (drop_img == "singa") {
+                image.setAttribute("src", "https://www.befren.com/wp-content/uploads/2020/03/fakta-Menarik-Tentang-Singa-befren.com_.jpg")
+                alert("ini gambar singa");
+
+            }else if (drop_img == "elang") {
+                image.setAttribute("src", "https://moondoggiesmusic.com/wp-content/uploads/2019/11/Burung-Elang.jpg")
+                alert("ini gambar elang");
+            
+            }else {
+                alert("Tidak ada gambar");
+            }
+        }
+    </script>
+</head>
+<body>
+    <select id="dropdown_img" onchange="gambar()">
+        <option hidden>---Pilih Gambar---</option>
+        <option value="gorila">Gorila</option>
+        <option value="singa">Singa</option>
+        <option value="elang">Elang</option>
+    </select>
+    <br>
+    <img alt="gambar" id="image">
+</body>
+</html>
