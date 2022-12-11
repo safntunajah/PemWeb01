@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Membuat Form Validasi dengan Javascrip</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<center><h2>Form Validation</h2></center>
+	<div class="login">
+		<form action="#" method="POST" onSubmit="validasi()">
+			<div>
+				<label>Nama Pelanggan:</label>
+				<input type="text" maxlength="30" placeholder="maximal 30 karakter" name="nama" id="nama" />
+			</div>
+			<div>
+				<label>Email:</label>
+				<input type="text" name="email" id="email"/>
+			</div>
+			<div>
+				<label>Jam Keberangkatan:</label>
+				<input type="time" name="jam keberangkatan" id="jam keberangkatan"/>
+			</div>
+            <div>
+				<label>Tujuan Keberangkatan:</label>
+				<input type="text" name="tujuan keberangkatan" id="tujuan keberangkatan"/>
+			</div>
+			<div>
+				<label>Jumlah Tiket:</label>
+				<input type="number" min="1" max="10" name="jumlah tiket" id="jumlah tiket"/>
+			</div>
+            <div>
+                <input type="submit" value="Submit" class="tombol">
+            </div>
+		</form>
+	</div>
+</body>
+<script type="text/javascript">
+	function validasi() {
+		var nama = document.getElementById("nama").value;
+		var email = document.getElementById("email").value;
+		var jamkeberangkatan = document.getElementById("jam keberangkatan").value;
+        var tujuankeberangkatan = document.getElementById("tujuan keberangkatan")
+        var jumlahtiket = document.getElementById("jumlah tiket")
+		if (nama != "" && email!="" && jamkeberangkatan !="" && tujuankeberangkatan !="" && jumlahtiket !="") {
+			return true;
+		
+        }else if(nama==""){
+            alert('required validation, maksimum 30 karakter');
+        
+        }else if (email == "") {
+            alert("required validation, email format");
+        
+        }else if (jamkeberangkatan == "") {
+            alert("required validation, jam dengan format jam antara 00.00–23.59");
+        
+        }else if (tujuankeberangkatan == "") {
+            alert("required validation");
+        
+        }else if (jumlahtiket == ""){
+            alert("required validation, bilangan bulat antara 1 sampai 10")
+        
+        }else{
+			alert('Anda harus mengisi data dengan lengkap !');
+		}
+	}
+</script>
+</html>
